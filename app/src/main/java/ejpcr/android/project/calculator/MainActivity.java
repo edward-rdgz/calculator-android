@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int numerito1 = Integer.parseInt(num1.getText().toString());
-                int numerito2 = Integer.parseInt(num1.getText().toString());
+                int numerito2 = Integer.parseInt(num2.getText().toString());
                 int sum = numerito1 + numerito2;
                 result.setText("R: "+sum);
             }
@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int numerito1 = Integer.parseInt(num1.getText().toString());
-                int numerito2 = Integer.parseInt(num1.getText().toString());
-                int sum = numerito1 - numerito2;
-                result.setText("R: " + sum);
+                int numerito2 = Integer.parseInt(num2.getText().toString());
+                int res = numerito1 - numerito2;
+                result.setText("R: " + res);
             }
         });
 
@@ -66,9 +66,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int numerito1 = Integer.parseInt(num1.getText().toString());
-                int numerito2 = Integer.parseInt(num1.getText().toString());
-                int sum = numerito1 * numerito2;
-                result.setText("R: " + sum);
+                int numerito2 = Integer.parseInt(num2.getText().toString());
+                int mul = numerito1 * numerito2;
+                result.setText("R: " + mul);
             }
         });
 
@@ -76,9 +76,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int numerito1 = Integer.parseInt(num1.getText().toString());
-                int numerito2 = Integer.parseInt(num1.getText().toString());
-                int sum = numerito1 / numerito2;
-                result.setText("R: " + sum);
+                int numerito2 = Integer.parseInt(num2.getText().toString());
+                int div = numerito1 / numerito2;
+                result.setText("R: " + div);
             }
         });
 
